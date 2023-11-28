@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seria", "Seria\Seria.csproj", "{5503DC5A-95C2-4C03-A65B-933A7DFD3E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seria.Tests", "Seria.Tests\Seria.Tests.csproj", "{55A6DC42-30DD-4ECB-A97B-059475F070A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5503DC5A-95C2-4C03-A65B-933A7DFD3E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5503DC5A-95C2-4C03-A65B-933A7DFD3E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5503DC5A-95C2-4C03-A65B-933A7DFD3E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5503DC5A-95C2-4C03-A65B-933A7DFD3E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A6DC42-30DD-4ECB-A97B-059475F070A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A6DC42-30DD-4ECB-A97B-059475F070A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A6DC42-30DD-4ECB-A97B-059475F070A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A6DC42-30DD-4ECB-A97B-059475F070A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3E97FFE-3C21-49C0-9CCC-A7E7B64D502A}
+	EndGlobalSection
+EndGlobal
