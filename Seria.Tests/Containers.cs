@@ -134,4 +134,58 @@ public partial class Tests
             inside?.Serialize(buffer);
         }
     }
+
+    [ObjectName("NamedContainer")]
+    class NamedContainer : ISeriaObject, IEquatable<NamedContainer>
+    {
+        private int number;
+
+        public NamedContainer(int number)
+        {
+            this.number = number;
+        }
+
+        public bool Equals(NamedContainer? other)
+        {
+            if (other is null)
+                return false;
+
+            if (ReferenceEquals(this, other))
+                return true;
+
+            return number == other.number;
+        }
+
+        public void Serialize(SeriaBuffer buffer)
+        {
+            buffer.SerializeValue(ref number);
+        }
+    }
+
+    [ObjectName("OtherNamedContainer")]
+    class OtherNamedContainer : ISeriaObject, IEquatable<OtherNamedContainer>
+    {
+        private int number;
+
+        public OtherNamedContainer(int number)
+        {
+            this.number = number;
+        }
+
+        public bool Equals(OtherNamedContainer? other)
+        {
+            if (other is null)
+                return false;
+
+            if (ReferenceEquals(this, other))
+                return true;
+
+            return number == other.number;
+        }
+
+        public void Serialize(SeriaBuffer buffer)
+        {
+            buffer.SerializeValue(ref number);
+        }
+    }
 }

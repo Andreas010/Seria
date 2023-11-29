@@ -10,3 +10,14 @@ public interface ISeriaObject
 {
     public void Serialize(SeriaBuffer buffer);
 }
+
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited = false, AllowMultiple = false)]
+public sealed class ObjectNameAttribute : Attribute
+{
+    public string Name { get; }
+
+    public ObjectNameAttribute(string name)
+    {
+        Name = name;
+    }
+}
